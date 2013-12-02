@@ -1,0 +1,68 @@
+<package>
+  <name>pgr_gige_camera_driver</name>
+  <version>1.0.0</version>
+  <description>
+		A ROS node to provide access to Point Grey Research GigE cameras,
+		using the FlyCapture2 SDK API
+		Acknowledgement: This package is based on pgr_camera,
+		by Patrick Bouffard (http://www.ros.org/wiki/prosilica_camera).
+</description>
+  <maintainer email="goncabrita@gmail.com">Gonçalo Cabrita</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/pgr_gige_camera_driver</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Gonçalo Cabrita</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>diagnostic_updater</build_depend>
+  <build_depend>diagnostic_msgs</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>self_test</build_depend>
+  <build_depend>driver_base</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>camera_calibration_parsers</build_depend>
+  <build_depend>camera_info_manager</build_depend>
+  <build_depend>polled_camera</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>diagnostic_updater</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>self_test</run_depend>
+  <run_depend>driver_base</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>camera_calibration_parsers</run_depend>
+  <run_depend>camera_info_manager</run_depend>
+  <run_depend>polled_camera</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>std_msgs</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>diagnostic_updater</test_depend> -->
+  <!-- <test_depend>diagnostic_msgs</test_depend> -->
+  <!-- <test_depend>image_transport</test_depend> -->
+  <!-- <test_depend>self_test</test_depend> -->
+  <!-- <test_depend>driver_base</test_depend> -->
+  <!-- <test_depend>dynamic_reconfigure</test_depend> -->
+  <!-- <test_depend>camera_calibration_parsers</test_depend> -->
+  <!-- <test_depend>camera_info_manager</test_depend> -->
+  <!-- <test_depend>polled_camera</test_depend> -->
+
+<export>
+    <rosdoc config="rosdoc.yaml"/>
+</export>
+
+</package>
